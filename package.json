@@ -1,0 +1,29 @@
+{
+  "name": "test-halber.io",
+  "version": "1.0.0",
+  "description": "web application for managing a list of users",
+  "main": "server.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run client \" \"npm run server \""
+  },
+  "keywords": [
+    "rest",
+    "ap"
+  ],
+  "author": "Moez Kouni",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
